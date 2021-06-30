@@ -5,7 +5,7 @@ Ziyang Li is currently a college student studying software engineering. He speci
 ## Education
 
 - Auburn University
-- class of 2023
+- Class of 2023
 - GPA: 3.95
 - Dean's List
 

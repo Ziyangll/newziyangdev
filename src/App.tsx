@@ -18,7 +18,7 @@ export default function App() {
       <div>
         <div className='header'>
           <Link to='/'>
-            <div className='btn'>Home</div>
+            <div className='btn'>Z</div>
           </Link>
           <div className='header-right'>
             <Link to='/about'>

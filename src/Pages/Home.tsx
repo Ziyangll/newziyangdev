@@ -31,7 +31,7 @@ export default function Home() {
   }, [subtitleArray.length]);
   return (
     <div>
-      <Canvas width={1000} height={300} />;
+      <Canvas width={1000} height={300} />
       <div className='home-intro-container'>
         <h1 className='intro-title'>I am Ziyang Li</h1>
         <p className='intro-subtitle'>I am {subtitleArray[subtitleIndex]}</p>

@@ -50,6 +50,11 @@ body {
   height: 100vh;
 }
 
+.parallax-slide-rain {
+  position: relative;
+  height: 70vh;
+}
+
 .parallax-clip {
   height: 100%;
   position: absolute;

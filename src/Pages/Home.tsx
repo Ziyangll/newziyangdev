@@ -31,11 +31,20 @@ export default function Home() {
   }, [subtitleArray.length]);
   return (
     <div>
-      <Canvas width={1000} height={300} />
-      <div className='home-intro-container'>
-        <h1 className='intro-title'>I am Ziyang Li</h1>
-        <p className='intro-subtitle'>I am {subtitleArray[subtitleIndex]}</p>
+      <div className='parallax-slide-rain'>
+        <div className='parallax-clip'>
+          <div className='fixed-parallax'>
+            <Canvas width={1000} height={300} />
+            <div className='home-intro-container'>
+              <h1 className='intro-title'>I am Ziyang Li</h1>
+              <p className='intro-subtitle'>
+                I am {subtitleArray[subtitleIndex]}
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+
       <div id='content-block'>
         <div className='content-push'>
           <div className='parallax-slide'>

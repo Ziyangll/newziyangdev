@@ -27,7 +27,7 @@ const Canvas = ({ width, height }: CanvasProps) => {
       const RAIN_LENGTH = 0.1;
       let circle_r = 0;
       const drops: DropsType[] = [];
-      for (let i = 0; i < 30; i++) {
+      for (let i = 0; i < 100; i++) {
         drops.push({
           t: Math.random(),
           deg: Math.random() * Math.PI,

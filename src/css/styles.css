@@ -1,11 +1,21 @@
 * {
   font-family: "Montserrat", "Arial", sans-serif;
-  color: #fff;
 }
 body {
   margin: 0;
   border: 0;
-  background-color: #000;
+  background-color: black;
+}
+
+.z-icon {
+  border-bottom: 10px solid #c09634;
+}
+
+.profile-pic {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 300px;
 }
 
 .home-intro-container {
@@ -40,6 +50,22 @@ body {
   }
 }
 
+.white {
+  color: white;
+}
+.blue {
+  color: #185adb;
+}
+
+.button {
+  background-color: #c09634;
+  color: #185adb;
+  border-radius: 5px;
+  border: 1px solid #c09634;
+  padding: 10px;
+  margin: 10px;
+}
+
 #content-block {
   position: relative;
   overflow: hidden;
@@ -47,12 +73,7 @@ body {
 
 .parallax-slide {
   position: relative;
-  height: 100vh;
-}
-
-.parallax-slide-rain {
-  position: relative;
-  height: 70vh;
+  height: 700px;
 }
 
 .parallax-clip {
@@ -97,5 +118,42 @@ body {
     position: fixed;
     background-attachment: unset;
     -webkit-transform: translateZ(0); /* necessary for iOS! */
+    transform: translateZ(0);
   }
+}
+
+.page-container {
+  margin: 10px;
+}
+
+.resume {
+  display: block;
+  border: none;
+  height: calc(100vh - 50px);
+  width: 100%;
+  align-items: center;
+  border-radius: 5px;
+}
+.resume-download-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+.about-container {
+  display: flex;
+  flex-direction: row;
+}
+.about-card {
+  padding: 10px;
+  height: 20vh;
+  width: 30%;
+  margin: 10px;
+  border-radius: 5px;
+  color: black;
+  background-color: whitesmoke;
+}
+
+.blog-link {
+  max-width: 40%;
 }

@@ -31,7 +31,7 @@ export default function Home() {
   }, [subtitleArray.length]);
   return (
     <div>
-      <div className='parallax-slide-rain'>
+      <div className='parallax-slide'>
         <div className='parallax-clip'>
           <div className='fixed-parallax'>
             <Canvas width={1000} height={300} />
@@ -40,6 +40,11 @@ export default function Home() {
               <p className='intro-subtitle'>
                 I am {subtitleArray[subtitleIndex]}
               </p>
+              <img
+                src='/img/profile_pic.png'
+                alt='ziyang li'
+                className='profile-pic'
+              ></img>
             </div>
           </div>
         </div>
@@ -62,12 +67,31 @@ export default function Home() {
               <div
                 className='fixed-parallax'
                 style={{
+                  backgroundColor: "black",
+                }}
+              ></div>
+            </div>
+          </div>
+          <div className='parallax-slide'>
+            <div className='parallax-clip'>
+              <div
+                className='fixed-parallax'
+                style={{
                   backgroundImage: `url(${testImages[2]})`,
                 }}
               ></div>
             </div>
           </div>
-
+          <div className='parallax-slide'>
+            <div className='parallax-clip'>
+              <div
+                className='fixed-parallax'
+                style={{
+                  backgroundColor: "black",
+                }}
+              ></div>
+            </div>
+          </div>
           <div className='parallax-slide'>
             <div className='parallax-clip'>
               <div
@@ -78,13 +102,32 @@ export default function Home() {
               ></div>
             </div>
           </div>
-
+          <div className='parallax-slide'>
+            <div className='parallax-clip'>
+              <div
+                className='fixed-parallax'
+                style={{
+                  backgroundColor: "black",
+                }}
+              ></div>
+            </div>
+          </div>
           <div className='parallax-slide'>
             <div className='parallax-clip'>
               <div
                 className='fixed-parallax'
                 style={{
                   backgroundImage: `url(${testImages[3]})`,
+                }}
+              ></div>
+            </div>
+          </div>
+          <div className='parallax-slide'>
+            <div className='parallax-clip'>
+              <div
+                className='fixed-parallax'
+                style={{
+                  backgroundColor: "black",
                 }}
               ></div>
             </div>

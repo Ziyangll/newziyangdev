@@ -18,7 +18,7 @@ export default function App() {
       <div>
         <div className='header'>
           <Link to='/'>
-            <div className='btn'>Z</div>
+            <div className='btn z-icon'>Z</div>
           </Link>
           <div className='header-right'>
             <Link to='/about'>
@@ -57,27 +57,29 @@ function Blogs() {
 
   return (
     <div>
-      <h2>Blog</h2>
-
-      <ul>
-        <li>
-          <Link to={`${match.url}/components`}>Components</Link>
-        </li>
-        <li>
-          <Link to={`${match.url}/props-v-state`}>Props v. State</Link>
-        </li>
-      </ul>
-
-      {/* The Blog page has its own <Switch> with more routes
-          that build on the /blog URL path. You can think of the
-          2nd <Route> here as an "index" page for all blogs, or
-          the page that is shown when no blog is selected */}
       <Switch>
         <Route path={`${match.path}/:blogId`}>
-          <Blog />
+          <div className='page-container'>
+            <Link className='button' to={`${match.url}`}>
+              &#60; &#60; &#60; &#60; &#60; &#60; &#60;
+            </Link>
+            <Blog />
+          </div>
         </Route>
         <Route path={match.path}>
-          <h3>My blogs</h3>
+          <div className='page-container'>
+            <h3 className='white'>Welcome to my blog!</h3>
+            <div className='button blog-link'>
+              <Link className='blue' to={`${match.url}/components`}>
+                Components
+              </Link>
+            </div>
+            <div className='button blog-link'>
+              <Link className='blue' to={`${match.url}/props-v-state`}>
+                Props v. State
+              </Link>
+            </div>
+          </div>
         </Route>
       </Switch>
     </div>

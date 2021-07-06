@@ -4,7 +4,7 @@
 
 # Ziyang Li Personal Website
 
-Ziyang Li is currently a college student studying software engineering. He specialize in front end web development and the React framework.
+I am currently a college student studying software engineering. I specialize in front end web development and the React framework.
 
 ## Education
 
